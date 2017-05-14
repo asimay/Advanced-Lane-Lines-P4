@@ -12,7 +12,7 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-![alt final][image11]
+![alt final][image12]
 
 [//]: # (Image References)
 
@@ -114,7 +114,7 @@ And then I used a curved line to test the perspective transform, and it works we
 #### 4. Identified lane-line pixels and fit their positions with a polynomial:
 
 Then I did some other stuff and fit my lane lines with a 2nd order polynomial.
-1. use `getHistogram(warp_img)` function to get histogram of the warped binary image, this can get the lines positon in image. I translated the histogram by `dst_pts[0][0]-200 = 120` pix from left to right, only process the histogram between the left line and right line and with some pixes buffer, because when road has much shade this will impact the handling result, so the histogram range from (0 ~ 840) now, result like this:
+1. use `getHistogram(warp_img)` function to get histogram of the warped binary image, this can get the lines positon in image. I translated the histogram by `dst_pts[0][0]-200 = 120` pix from left to right, only process the histogram between the left line and right line and with some pixes buffer, because when road has much shade this will impact the handling result, so the histogram range from (120 ~ 1160) now, result like this:
 
 ![alt text][image9]
 
