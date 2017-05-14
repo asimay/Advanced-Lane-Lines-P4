@@ -150,6 +150,14 @@ xm_per_pix = 3.7/700 # meters per pixel in x dimension
 
 and the re-fit the line from 'meter' perspective. This will help us to get radius of curvature of lane.
 
+About the position of the vehicle with respect to center, I assume the camera is mounted at the center of the car and the deviation of the midpoint of the lane from the center of the image, this offset is what i'm looking for.
+I calculate the offset between the image center and lane center, and switch to meter metric.
+lane center is calculate by substract leftx_fix and rightx_fix after fit the 2nd order polynomial.
+
+```
+distance_from_center = np.absolute((img_size[0]/ 2 - lane_center) * xm_per_pix)
+```
+
 #### 6. Result plotted back down onto the road such that the lane area is identified clearly.
 
 1. we need draw the fit lines on image, and then use inverse perspective to plot it back down onto road.
