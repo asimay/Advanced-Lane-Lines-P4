@@ -28,6 +28,7 @@ The goals / steps of this project are the following:
 [image10]: ./output_images/formular.png "formular.png"
 [image11]: ./output_images/final.png "final.png"
 [image12]: ./output_images/final.gif "final.gif"
+[image13]: ./output_images/finalr.jpg "final.gif"
 
 [video1]: ./project_video.mp4 "Video"
 
@@ -171,6 +172,10 @@ Here is an example of my result on a test image:
 ### Pipeline (video)
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
+
+Here is an example of my result on a video:
+
+![alt text][image13]
 
 Here's a [link to my video result](./project_video.mp4)
 
