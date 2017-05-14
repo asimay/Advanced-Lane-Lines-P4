@@ -189,4 +189,5 @@ Here's a [link to my video result](./project_video.mp4)
 
 2. HLS color space, because the road has shade and lightness, the color space choosen is also very important.
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+3. the shade or no lane line will happened to some abnormal case, still need to make interest mask or other method to make it more robust.
+
