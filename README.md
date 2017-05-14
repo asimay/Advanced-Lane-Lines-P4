@@ -12,6 +12,8 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
+![alt final][image11]
+
 [//]: # (Image References)
 
 [image1]: ./output_images/findanddrawChessboardCorners.png "findcorner"
@@ -25,6 +27,7 @@ The goals / steps of this project are the following:
 [image9]: ./output_images/histgram.png "histgram.png"
 [image10]: ./output_images/formular.png "formular.png"
 [image11]: ./output_images/final.png "final.png"
+[image12]: ./output_images/final.gif "final.gif"
 
 [video1]: ./project_video.mp4 "Video"
 
