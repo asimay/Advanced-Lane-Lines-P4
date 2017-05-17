@@ -12,7 +12,6 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-![alt final][image12]
 
 [//]: # (Image References)
 
@@ -145,8 +144,13 @@ and then visualization the result, like this:
 and code:
 
 ```python
-ym_per_pix = 30/720  # meters per pixel in y dimension
-xm_per_pix = 3.7/700 # meters per pixel in x dimension 
+left_c = left_fit[0] * img_size[1] ** 2 + left_fit[1] * img_size[1] + left_fit[2]
+right_c = right_fit[0] * img_size[1] ** 2 + right_fit[1] * img_size[1] + right_fit[2]
+width = right_c - left_c
+xm_per_pix = 3.7 / width
+
+# Define conversions in x and y from pixels space to meters
+ym_per_pix = 3*9/720 # meters per pixel in y dimension
 ```
 
 and the re-fit the line from 'meter' perspective. This will help us to get radius of curvature of lane.
